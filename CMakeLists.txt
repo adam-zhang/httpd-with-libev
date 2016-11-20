@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(tinyhttpd)
+set(sources appMain.cpp)
+set(headers )
+add_executable(tinyhttpd ${sources} ${headers})
+target_link_libraries(tinyhttpd ev)
